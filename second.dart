@@ -24,6 +24,12 @@ void ListDemo(){
   List<String> names = ["subbu", "Raju", "Varma"];
   var newNames = [...names,"Venky"]; // spread operator
   print(newNames);
+
+//Generators
+  var list =List.generate(100, (index){
+return "Item $index";
+  });
+   print(list);
 }
 
 void SetDemo(){
